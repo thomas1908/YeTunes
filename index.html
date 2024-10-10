@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://via.placeholder.com; script-src 'self'; style-src 'self';">
+    <link rel="stylesheet" href="styles.css">
+    <title>YeTunes</title>
+</head>
+<body class="light-mode">
+    <div class="title-bar">
+        <div class="window-controls">
+            <button id="dark-mode-toggle">Dark Mode</button>
+            <button id="minimize"><img src="img/icons/minimize_Window.webp"></button>
+            <button id="maximize"><img src="img/icons/maximize_window.webp"></button>
+            <button id="close"><img src="img/icons/close_window.webp"></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar light-mode">
+            <h1 class="title-sidebar">YeTunes</h1>
+            <ul>
+                <div id="red-bar"></div>
+                <li class="home-sidebar selection selected">
+                    <div class="home-icon">
+                        <img src="img/icons/home-icon.png">
+                    </div>
+                    <span>Home</span>
+                </li>
+                <li class="search-sidebar selection">
+                    <div class="search-icon">
+                        <img src="img/icons/search-icon.png">
+                    </div>
+                    <span>Search</span>
+                </li>
+                <li class="news-sidebar selection">
+                    <div class="news-icon">
+                        <img src="img/icons/news-icon.png">
+                    </div>
+                    <span>News</span>
+                </li>
+            </ul>
+            <div class="library-list">
+                <ul>
+                    <li class="frame-library selection">
+                        <div class="frame-icon">
+                            <img src="img/icons/Kanye West.jpg">
+                        </div>
+                        <img src="img/icons/pin-icon.png" class="pinned">
+                        <div class="frame-title">
+                            <h2>Kanye West</h2>
+                            <span>Artist</span>
+                        </div>
+                    </li>
+                    <li class="frame-library selection">
+                        <div class="frame-icon">
+                            <img src="img/playlist/Goat_playlist.png">
+                        </div>
+                        <img src="img/icons/pin-icon.png" class="pinned">
+                        <div class="frame-title">
+                            <h2>Goat</h2>
+                            <span>Playlist • Thomas</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content light-mode">
+        </div>
+        <div class="profile-artist light-mode">
+            <div class="artist">
+                <img src="img/icons/Kanye West.jpg" alt="Kanye West">
+                <h2>Kanye West</h2>
+            </div>
+            <button id="play-button">
+                <span>Unfollow</span>
+            </button>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

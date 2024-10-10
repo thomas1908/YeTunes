@@ -1,0 +1,16 @@
+{
+  "name": "yetunes",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^32.1.2",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
